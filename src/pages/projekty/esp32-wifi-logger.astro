@@ -1,0 +1,44 @@
+---
+const tytul = "ESP32 WiFi Logger";
+const pobierz = "/downloads/esp32-wifi-logger.ino";
+const zdjecia = [
+  "/projekty/esp32-wifi-logger/zdjecie1.jpg",
+  "/projekty/esp32-wifi-logger/zdjecie2.jpg"
+];
+---
+
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{tytul}</title>
+  </head>
+  <body style="font-family: system-ui, sans-serif; margin:0;">
+    <main style="max-width:900px; margin:0 auto; padding:24px;">
+      <a href="/strona-pro/projekty/">← Wróć do listy</a>
+      <h1 style="margin-top:12px;">{tytul}</h1>
+
+      <p>
+        Opis: co robi projekt, jakie moduły, jak podłączyć, jak uruchomić.
+      </p>
+
+      <h2>Zdjęcia</h2>
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:12px;">
+        {zdjecia.map((src) => (
+          <img src={src} alt={tytul} style="width:100%; border-radius:12px;" loading="lazy" />
+        ))}
+      </div>
+
+      <h2 style="margin-top:18px;">Pliki</h2>
+      <a href={pobierz} download style="display:inline-block; padding:10px 14px; border:1px solid #333; border-radius:10px;">
+        Pobierz gotowy plik .ino
+      </a>
+
+      <h2 style="margin-top:18px;">Linki</h2>
+      <ul>
+        <li><a href="https://github.com/" target="_blank" rel="noreferrer">Repo / kod</a></li>
+        <li><a href="https://randomnerdtutorials.com/" target="_blank" rel="noreferrer">Dokumentacja / poradnik</a></li>
+      </ul>
+    </main>
+  </body>
+</html>
