@@ -1,1 +1,12 @@
-
+[
+  {
+    "slug": "esp32-wifi-logger",
+    "tytul": "ESP32 WiFi Logger",
+    "krotko": "Zapis danych do pliku i podgląd przez WiFi.",
+    "miniatura": "/projekty/esp32-wifi-logger/zdjecie1.jpg",
+    "linki": [
+      { "label": "GitHub", "url": "https://github.com/jaguda85/strona-pro" }
+    ],
+    "pobierz": "/downloads/esp32-wifi-logger.ino"
+  }
+]
